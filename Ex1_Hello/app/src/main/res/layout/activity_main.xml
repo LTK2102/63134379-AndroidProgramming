@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
         android:text="HelloAndroid"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="335dp" />
+        tools:layout_editor_absoluteY="335dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
