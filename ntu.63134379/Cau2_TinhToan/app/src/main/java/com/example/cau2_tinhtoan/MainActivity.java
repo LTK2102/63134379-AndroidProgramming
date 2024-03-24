@@ -72,7 +72,80 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        bt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBang){
+                    TinhToan = mainsrceen.getText().toString();
+                    mainsrceen.setText(TinhToan + "4");
+                }
+            }
+        });
+        bt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBang){
+                    TinhToan = mainsrceen.getText().toString();
+                    mainsrceen.setText(TinhToan + "5");
+                }
+            }
+        });
+        bt6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBang){
+                    TinhToan = mainsrceen.getText().toString();
+                    mainsrceen.setText(TinhToan + "6");
+                }
+            }
+        });
+        bt7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBang){
+                    TinhToan = mainsrceen.getText().toString();
+                    mainsrceen.setText(TinhToan + "7");
+                }
+            }
+        });
+        bt8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBang){
+                    TinhToan = mainsrceen.getText().toString();
+                    mainsrceen.setText(TinhToan + "8");
+                }
+            }
+        });
+        bt9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBang){
+                    TinhToan = mainsrceen.getText().toString();
+                    mainsrceen.setText(TinhToan + "9");
+                }
+            }
+        });
+        btdot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!checkBang){
+                    if(!checkDot){
+                        TinhToan = mainsrceen.getText().toString();
+                        mainsrceen.setText(TinhToan + ".");
+                        checkDot=true;
+                    }
+                }
+            }
+        });
 
+        btcong.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+            }
+        }
     }
 
     protected void anhxa()
