@@ -143,9 +143,112 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
+            if(mainsrceen.getText()==""){
+                so1= 0;
+                secondscreen.setText("0 + ");
             }
-        }
+            else {
+                so1 = Double.parseDouble(mainsrceen.getText()+"");
+                secondscreen.setText(mainsrceen.getText().toString()+ " + ");}
+            mainsrceen.setText("");
+            TinhToan="";
+            pheptoan="+";
+            checkDot=false;
+            checkBang=false;
+            }
+        });
+
+        bttru.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if(mainsrceen.getText()==""){
+                    so1= 0;
+                    secondscreen.setText("0 - ");
+                }
+                else {
+                    so1 = Double.parseDouble(mainsrceen.getText()+"");
+                    secondscreen.setText(mainsrceen.getText().toString()+ " - ");}
+                mainsrceen.setText("");
+                TinhToan="";
+                pheptoan="-";
+                checkDot=false;
+                checkBang=false;
+            }
+        });
+
+        btnhan.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if(mainsrceen.getText()==""){
+                    so1= 0;
+                    secondscreen.setText("0 x ");
+                }
+                else {
+                    so1 = Double.parseDouble(mainsrceen.getText()+"");
+                    secondscreen.setText(mainsrceen.getText().toString()+ " x ");}
+                mainsrceen.setText("");
+                TinhToan="";
+                pheptoan="*";
+                checkDot=false;
+                checkBang=false;
+            }
+        });
+        btchia.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if(mainsrceen.getText()==""){
+                    so1= 0;
+                    secondscreen.setText("0 ÷ ");
+                }
+                else {
+                    so1 = Double.parseDouble(mainsrceen.getText()+"");
+                    secondscreen.setText(mainsrceen.getText().toString()+ " ÷ ");}
+                mainsrceen.setText("");
+                TinhToan="";
+                pheptoan="/";
+                checkDot=false;
+                checkBang=false;
+            }
+        });
+
+        btbang.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if(!checkBang){
+                    checkDot=false;
+                    TinhToan=mainsrceen.getText().toString();
+                    so2=Double.parseDouble(mainsrceen.getText() + "");
+                    secondscreen.setText("");
+                    if (pheptoan== "+")
+                        ketqua = so1 + so2;
+                    else if (pheptoan == "-")
+                        ketqua = so1 - so2;
+                    else if (pheptoan == "*")
+                        ketqua = so1 * so2;
+                    else if (pheptoan == "/")
+                        ketqua = so1 / so2;
+                    checkBang=true;
+                    mainsrceen.setText(ketqua + "");
+                }
+                pheptoan="";
+            }
+        });
+
+        btce.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (!checkBang){
+                    String val = mainsrceen.getText().toString();
+                    if(!val.isEmpty()){
+                        val=val.substring(0,val.length()-1);
+                        mainsrceen.setText(val);
+                    }
+                }
+            }
+        });
     }
 
     protected void anhxa()
