@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
                     checkDot=false;
                     TinhToan=mainsrceen.getText().toString();
                     so2=Double.parseDouble(mainsrceen.getText() + "");
-                    secondscreen.setText("");
+                    secondscreen.setText(secondscreen.getText().toString() + mainsrceen.getText().toString());
                     if (pheptoan== "+")
                         ketqua = so1 + so2;
                     else if (pheptoan == "-")
