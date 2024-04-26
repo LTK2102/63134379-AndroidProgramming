@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_secondary40"
-    tools:context=".HomeFragment">
-
+    tools:context="Fragment_home">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:text="Home Fragmaent"
-        android:layout_gravity="center"/>
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:background="#8484EA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Home" />
 
 </FrameLayout>

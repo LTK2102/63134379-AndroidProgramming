@@ -8,9 +8,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-    
+public class MainActivity<BottomNavigationView> extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
